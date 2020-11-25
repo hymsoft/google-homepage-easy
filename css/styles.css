@@ -54,7 +54,8 @@ main {
 
 main .main-header {
     margin: 10px 0;
-    width: 40%;
+    width: 50%;
+    max-width: 300px;
     height: auto;
 }
 
@@ -64,6 +65,7 @@ main .main-header img {
 
 main .main-form {
     width: 80%;
+    max-width: 800px;
 }
 
 main .main-form .form-input {
@@ -94,9 +96,10 @@ main .main-form .form-input input {
 }
 
 main .main-form .form-buttons {
-    margin: 30px 0px;
+    margin: 30px auto;
     display: flex;
     justify-content: space-around;
+    max-width: 500px;
 }
 
 main .main-form .form-buttons a {
@@ -135,4 +138,54 @@ main .main-footer a {
 
 main .main-footer a:hover {
     text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    color: #0000008A;
+    /*
+    position: fixed;
+    left: 0;
+    bottom: 0;
+*/
+}
+
+footer .pais {
+    padding: 10px 0 10px 25px;
+    border-top: 1px solid rgb(218, 220, 224);
+    border-bottom: 1px solid rgb(218, 220, 224);
+    font-size: 15px
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-links {
+    text-decoration: none;
+    color: #0000008A;
+    padding: 10px 20px;
+    font-size: 14px
+}
+
+footer .container1,
+footer .container2 {
+    min-height: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
