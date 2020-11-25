@@ -1,1 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+/* NAVBAR*/
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 20px 0 0;
+    height: 40px;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 14px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-icon {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    background-color: blueviolet;
+    padding: 5px 15px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: default;
+    font-size: 14px;
+}
+
+
+/* MAIN*/
+main {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main .main-header {
+    margin: 10px 0;
+    width: 30%;
+    height: auto;
+}
+
+main .main-header img {
+    width: 100%;
+}
+
+main .main-form {
+    background-color: blue;
+    width: 70%;
+}
+
+main .main-form .form-input {
+    background-color: azure;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+main .main-form .form-input img:first-child {
+    height: 20px;
+    margin-left: 10px;
+}
+
+main .main-form .form-input img:last-child {
+    height: 30px;
+    margin-right: 10px;
+}
+
+main .main-form .form-input input {
+    width: 80%;
+    margin: 0 20px;
+    border: none;
+}
