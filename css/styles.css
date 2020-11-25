@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: arial, sans-serif;
 }
 
 
@@ -45,7 +46,6 @@
 
 /* MAIN*/
 main {
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -54,7 +54,7 @@ main {
 
 main .main-header {
     margin: 10px 0;
-    width: 30%;
+    width: 40%;
     height: auto;
 }
 
@@ -63,8 +63,7 @@ main .main-header img {
 }
 
 main .main-form {
-    background-color: blue;
-    width: 70%;
+    width: 80%;
 }
 
 main .main-form .form-input {
@@ -92,4 +91,48 @@ main .main-form .form-input input {
     width: 80%;
     margin: 0 20px;
     border: none;
+}
+
+main .main-form .form-buttons {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .main-form .form-buttons a {
+    padding: 10px 15px;
+    border: none;
+    background-color: lightgray;
+    color: #000;
+    text-decoration: none;
+
+    background-image: -webkit-linear-gradient(top, #f8f9fa, #f8f9fa);
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+main .main-form .form-buttons a:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(top, #f8f9fa, #f8f9fa);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+main .main-footer {
+    font-size: 14px;
+}
+
+main .main-footer a {
+    text-decoration: none;
+}
+
+main .main-footer a:hover {
+    text-decoration: underline;
 }
