@@ -34,7 +34,7 @@
 }
 
 .nav-button {
-    background-color: blueviolet;
+    background-color: #4683ea;
     padding: 5px 15px;
     color: #FFF;
     text-decoration: none;
@@ -74,9 +74,14 @@ main .main-form .form-input {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
+    border: 1px solid #dfe1e5;
     border-radius: 50px;
     margin: 10px;
+}
+
+main .main-form .form-input:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: rgba(223, 225, 229, 0);
 }
 
 main .main-form .form-input img:first-child {
@@ -179,13 +184,32 @@ footer .container2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    max-width: 350px;
 }
-
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+@media screen and (min-width: 700px) {
+    footer .container2 {
+        max-width: 550px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    footer .footer-container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    footer .container2 {
+        max-width: 550px;
+    }
 }
